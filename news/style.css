@@ -6,6 +6,12 @@
     grid-area: nav-header;
     background-color: red;
     padding: 40px;
+    margin: 5px;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
 }
 
 .my-page {
