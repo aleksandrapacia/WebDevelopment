@@ -2,7 +2,15 @@
     box-sizing: border-box;
 }
 
-h1 {
-    font-family:cursive;
-    color: red;
+.my-page-header {
+    grid-area: nav-header;
+    background-color: red;
+    padding: 40px;
+}
+
+.my-page {
+    display: grid;
+    grid-template-areas:  
+    "nav-header"
+    
 }
