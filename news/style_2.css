@@ -1,42 +1,99 @@
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-    padding: 30px;
+  padding: 30px;
 }
-
-.main {
-    font-family: "Snell Roundhand";
-    font-weight: normal;
-    font-size: 60px;
-    text-align: center;
-  }
-
-.main-header {
-    grid-area: header;
+/* plain text * /
+.brand {
+  font-family: "Snell Roundhand";
+  font-weight: normal;
+  font-size: 60px;
+  text-align: center;
 }
-  
+/*grid brand header */
+.brand-header {
+  grid-area: header;
+}
+/*setting a grid*/
 .nav-links {
-    grid-area: nav-links;
+  grid-area: nav;
+}
+/*stories*/
+.story-1 {
+  grid-area: story-1;
 }
 
-.story-1 {
-    grid-area: story-1;
-  }
-  
-  .story-2 {
-    grid-area: story-2;
-  }
-  
-  .story-3 {
-    grid-area: story-3;
-  }
-  
-  .story-4 {
-    grid-area: story-4;
-  }
-  
-  .story-5 {
-    grid-area: story-5;
-  }
+.story-2 {
+  grid-area: story-2;
+}
+
+.story-3 {
+  grid-area: story-3;
+}
+
+.story-4 {
+  grid-area: story-4;
+}
+
+.story-5 {
+  grid-area: story-5;
+}
+/*grid for the whole page*/
+.page {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "story-1 story-2 story-3"
+    "story-4 story-5 story-5";
+}
+
+/* properties for posts*/
+.article-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.article-img {
+  display: block;
+  margin: 0 auto;
+  max-height: 250px;
+}
+
+/* for every story*/
+.story {
+  padding: 10px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+}
+/*unique properties for sotry-3 and story-5*/
+.story-3, .story-5 {
+  border-right: 3px solid black;
+}
+/* how to display links */
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  border: 3px solid black;
+  margin: 0;
+  padding: 30px;
+}
+/*text for links*/
+.section-link {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Futura";
+  color: #666;
+}
+/* when link hovered*/
+.section-link:hover {
+  text-decoration: underline;
+}
