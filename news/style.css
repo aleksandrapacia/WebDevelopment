@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-
+/* jak zrobic sub grid? */
 .my-page-header {
     grid-area: nav-header;
     background-color: red;
@@ -14,9 +14,90 @@
     border: 3px solid;
 }
 
+.lefty {
+    grid-area: lefty;
+    background-color: grey;
+    padding: 30px;
+    margin: 5px;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+}
+
+.image {
+    grid-area: image;
+
+    background-color: aqua;
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+
+  }
+
+.cat {
+    grid-area: cat;
+
+    background-color: pink;
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+
+}
+
+
 .my-page {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 15px;
     grid-template-areas:  
-    "nav-header"
+    "nav-header nav-header nav-header nav-header"
+    "lefty lefty righty righty"
+
     
 }
+
+.righty-header {
+
+    grid-area: right-header;
+    background-color: red;
+    padding: 10px;
+    margin: 1px;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+
+
+}
+
+.righty {
+    grid-area: righty;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 15px;
+    padding: 30px;
+    margin: 5px;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+    grid-template-areas:  
+    "right-header right-header"
+    "image cat"
+
+}
+
