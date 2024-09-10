@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+}
+
+.main {
+    font-family: "Snell Roundhand";
+    font-weight: normal;
+    font-size: 60px;
+    text-align: center;
+  }
+
+.main-header {
+    grid-area: header;
+}
+  
+.nav-links {
+    grid-area: nav-links;
+}
