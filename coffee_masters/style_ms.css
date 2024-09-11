@@ -1,15 +1,19 @@
 * {
     box-sizing: border-box;
-    }
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    }
+/*
 .body {
     padding: 5px
 }
+    */
 
-.page {
-    display: grid;
-    grid-template-areas: "header header";
-}
 
 .main {
     font-family:'Open Sans', sans-serif;
@@ -18,6 +22,32 @@
     text-align: center;
 
 }
-.main-header {
-    grid-area: header;
+
+.main-nav {
+    background-color: #43281c;
+    color: #fbf2c0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+  }
+
+
+.logo {
+    height: 30px;
+    position: relative;
+    top: 3px;
 }
+
+/* grid for page */
+/*
+.page {
+    display: grid;
+    grid-template-areas: "logo header";
+    row-gap: 30px;
+    column-gap: 30px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+}
+    */
