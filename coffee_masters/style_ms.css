@@ -41,13 +41,4 @@ body {
 }
 
 /* grid for page */
-/*
-.page {
-    display: grid;
-    grid-template-areas: "logo header";
-    row-gap: 30px;
-    column-gap: 30px;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
-}
-    */
+
