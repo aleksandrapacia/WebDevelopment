@@ -41,21 +41,55 @@ body {
 }
 
 /* grid for page */
-
 .page {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+    padding: 20px;
     width: 100%;
     margin: auto;
     grid-template-areas: 
-        "order-box payment"
+        "order payment"
 }
 
+/* style of the box */
+.box {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+/* style for a title of the box */
+.box-title {
+    color: #885a2d;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/*parameters for one order */
+.order {
+    grid-area: order;
+}
+
+.payment {
+    grid-area: payment;
+  }
+
+.total {
+    grid-area: total;
+}
+
+/*list of items which are ordered*/
 .items {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
 
-  
+/*TODO:finish the item's view*/
+.item {
+
+}
