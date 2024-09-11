@@ -91,5 +91,27 @@ body {
 
 /*TODO:finish the item's view*/
 .item {
+    border-top: 1px solid brown;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas:
+        "quantity title price"
+        "quantity options price"
+    
 
+}
+
+.item-quantity {
+    grid-area: quantity;
+}
+
+.item-title {
+    grid-area: title;
+    font-weight: bold;
+}
+
+.item-price {
+    grid-area: price;
+    font-weight: bold;
 }
