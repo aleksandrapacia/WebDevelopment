@@ -5,7 +5,7 @@ box-sizing: border-box;
 body {
   padding: 30px;
 }
-/* plain text * /
+/* plain text */
 .brand {
   font-family: "Snell Roundhand";
   font-weight: normal;
@@ -93,7 +93,7 @@ body {
   font-family: "Futura";
   color: #666;
 }
-/* when link hovered*/
+/* when link
 .section-link:hover {
   text-decoration: underline;
 }
