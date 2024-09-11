@@ -45,7 +45,35 @@ body {
 .page {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5px
+    grid-gap: 10px;
+    width: 100%;
+    margin: auto;
+    grid-template-areas: 
+        "order-box payment"
 }
 
+.order-box {
+    grid-area: order-box
+}
 
+.items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.box {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.box-title {
+    color: #885a2d;
+    font-weight: normal;
+    font-size: 16px;
+}
+  
