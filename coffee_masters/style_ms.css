@@ -119,9 +119,10 @@ body {
 .input-group {
     position: relative;
     margin-bottom: 20px;
+    
   }
 
-.user.input {
+.user-input {
     background-color: rgba(0,0,0,0);
     border: 2px #885a2d solid;
     padding: 8px;
