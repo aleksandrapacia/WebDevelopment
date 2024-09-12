@@ -120,7 +120,25 @@ body {
     position: relative;
     margin-bottom: 20px;
   }
+
+.user.input {
+    background-color: rgba(0,0,0,0);
+    border: 2px #885a2d solid;
+    padding: 8px;
+    border-radius: 100px;
+    width: 100%;
+    text-indent: 18px;
+    font-size: 18px;
+}
 /* style for user input*/
 .user-input-label {
-    none
+    /*place for further code */
+    color: #885a2d;
+    background-color: #eee1d5 ;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
 }
+
