@@ -50,6 +50,7 @@ body {
     margin: auto;
     grid-template-areas: 
         "order payment"
+        "total total"
 }
 
 /* style of the box */
@@ -143,3 +144,14 @@ body {
     padding: 0 2px;
 }
 
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.final-totals {
+    font-weight: bold;
+
+}
