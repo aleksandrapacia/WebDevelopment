@@ -89,7 +89,6 @@ body {
     margin: 0;
 }
 
-/*TODO:finish the item's view*/
 .item {
     border-top: 1px solid brown;
     display: grid;
