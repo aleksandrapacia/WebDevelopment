@@ -114,3 +114,13 @@ body {
     grid-area: price;
     font-weight: bold;
 }
+
+/* style for NAME */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+/* style for user input*/
+.user-input-label {
+    none
+}
