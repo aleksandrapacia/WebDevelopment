@@ -1,7 +1,20 @@
-const responseFromServer = `{"name": "Luna","age": 10,"breed": "Havanese","location": {"city":"Seattle","state": "WA"}}`;
-console.log(responseFromServer);
+const DOG_URL = "https://dog.ceo/api/breeds/image/random";
+const doggos = document.getElementById('dog-target');
 
-const responseObject = JSON.parse(responseFromServer);
+function addNewDoggo() {
+    const promise = fetch(DOG_URL);
+    promise.then( function (response) {
+        const processingPromise = response.text();
+        return processingPromise;
+    }).then(function (processedResponse) {
+        const dogObject = JSON.parse(processedResponse);
+        const img = document.createElement('img');
+        img.src = dogObject.message;
+        img.alt = 'cute doggo';
+        doggos.appendChild(img);
+    }).catch(function(error)) {
+        alert('oh not it\'s bad')
+    }
+}
 
-console.log(responseObject.name);
-console.log(responseObject.location.state);
+document.getElementById('dog-btn').addEventListener("click", addNewDoggo);
